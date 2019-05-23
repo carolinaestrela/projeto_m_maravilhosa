@@ -2,7 +2,7 @@ const box = document.querySelector('.maravilhosas__box');
 const button = document.querySelector(".button");
 
 button.addEventListener("click", (evento) => {
-    evento.preventDefault();
+
 
     const nome = document.querySelector(".title").value
     const img = document.querySelector(".imagem").value
@@ -23,7 +23,6 @@ button.addEventListener("click", (evento) => {
         })
 
     })
-    location.reload()
 })
 fetch('http://localhost:5001/maravilhosas/')
 
