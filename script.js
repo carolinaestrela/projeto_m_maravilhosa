@@ -53,6 +53,19 @@ fetch('http://localhost:5001/maravilhosas/')
             nome.innerHTML = mulher.title;
             link.appendChild(nome);
 
+            let botao=Document.createElement('button');
+            botao.setAttribute('content-id',mulher.id);
+            botao.textContent= 'x';
+            perfil.append(botao);
+
+            botao.addEventListener('click', ()=>{
+                let thisCard = botao.parentElement;
+                let cardPai = thisCard.parentElement;
+
+                fetch()
+
+            }
+
         })
     })
     .catch((erro) => {
